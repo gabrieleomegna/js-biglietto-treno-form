@@ -4,5 +4,15 @@
 // il prezzo del biglietto è definito in base ai km (0.1976 € al km)
 // va applicato uno sconto del 17.65% per i minorenni
 // va applicato uno sconto del 53.27% per gli over 65.
-const userKilometers = parseInt (document.querySelector('input#kilometers').value)
-console.log(userKilometers)
+
+
+const buttonElement = document.querySelector('button');
+
+buttonElement.addEventListener ('click', 
+    function () {
+        const userKilometers = parseFloat(document.querySelector('input#kilometers').value);
+        // console.log(userKilometers);
+        const userAge = parseFloat (document.querySelector('input#user-age').value);
+        
+    }
+)
